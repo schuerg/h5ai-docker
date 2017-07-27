@@ -1,0 +1,17 @@
+# Docker Compose file for deploying this app with one command.
+# Usage: see README.md
+# https://docs.docker.com/compose/compose-file/
+#
+# Simon Schürg
+
+version: "3"
+
+services:
+
+  h5ai:
+    container_name: h5ai
+    build: .
+    volumes:
+      - ./data:/var/www/html/data
+    ports:
+      - 127.0.0.1:1080:80
