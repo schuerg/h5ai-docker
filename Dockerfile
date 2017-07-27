@@ -24,5 +24,3 @@ RUN apt-get update && apt-get install -y \
 
 COPY .htaccess .
 COPY options.json _h5ai/private/conf/options.json
-
-RUN ls -lah
